@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Joseph J Home Improvement | Construction & Property Services NJ</title>
-  <meta name="description" content="Professional construction, landscaping, and property services in New Jersey. Free estimates. Reliable, clean, and on time."/>
+  <title>Joseph J Property Services | Landscaping & Maintenance NJ</title>
+  <meta name="description" content="Reliable landscaping, property maintenance, and digital contractor systems in Union and Monmouth County, NJ."/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -17,15 +17,15 @@
     .container{max-width:1100px;margin:0 auto;padding:0 20px}
     header{position:sticky;top:0;background:rgba(11,15,20,.8);backdrop-filter:blur(8px);border-bottom:1px solid #1f2937;z-index:10}
     .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
-    .nav a{opacity:.9}
-    .nav .links a{margin-left:18px}
-    .logo{font-weight:800;letter-spacing:.5px}
-    .btn{display:inline-block;padding:12px 18px;border-radius:999px;background:var(--brand);color:#111;font-weight:700;box-shadow:0 10px 30px rgba(245,158,11,.25)}
+    .nav .links a{margin-left:18px; opacity:.9}
+    .nav .links a:hover{color:var(--brand)}
+    .logo{font-weight:800;letter-spacing:.5px; font-size: 1.2rem;}
+    .btn{display:inline-block;padding:12px 18px;border-radius:999px;background:var(--brand);color:#111;font-weight:700;box-shadow:0 10px 30px rgba(245,158,11,.25); border:none; cursor:pointer;}
     .btn.alt{background:transparent;color:var(--text);border:1px solid #374151}
 
     .hero{padding:80px 0 60px}
     .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
-    .eyebrow{color:var(--brand2);font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:12px}
+    .eyebrow{color:var(--brand2);font-weight:700;letter-spacing:.05em;text-transform:uppercase;font-size:12px}
     h1{font-size:42px;line-height:1.1;margin:10px 0 14px}
     .lead{color:var(--muted);font-size:18px}
     .cta{margin-top:22px;display:flex;gap:12px;flex-wrap:wrap}
@@ -45,31 +45,35 @@
     .tag{display:inline-block;font-size:12px;border:1px solid #374151;border-radius:999px;padding:4px 10px;color:#cbd5e1}
 
     .portfolio{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-    .ph{aspect-ratio:4/3;border-radius:16px;background:linear-gradient(135deg,#1f2937,#111827);border:1px dashed #374151;display:flex;align-items:center;justify-content:center;color:#9aa4b2}
+    .ph{aspect-ratio:4/3;border-radius:16px;background:linear-gradient(135deg,#1f2937,#111827);border:1px dashed #374151;display:flex;align-items:center;justify-content:center;color:#9aa4b2; overflow:hidden;}
+    .ph img{width:100%; height:100%; object-fit:cover;}
 
     .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
     .step{counter-increment:step}
-    .step .num{width:34px;height:34px;border-radius:50%;background:var(--brand);color:#111;display:inline-flex;align-items:center;justify-content:center;font-weight:800}
+    .step .num{width:34px;height:34px;border-radius:50%;background:var(--brand);color:#111;display:inline-flex;align-items:center;justify-content:center;font-weight:800; margin-bottom: 10px;}
 
     .cta-band{background:linear-gradient(90deg,rgba(245,158,11,.15),rgba(34,197,94,.15));border:1px solid #1f2937;border-radius:18px;padding:22px;display:flex;align-items:center;justify-content:space-between;gap:16px}
 
     footer{border-top:1px solid #1f2937;padding:24px 0;color:#9aa4b2}
+    
+    input, textarea {width:100%;padding:12px;margin:6px 0;background:#0b0f14;border:1px solid #374151;color:#e6edf3;border-radius:10px; font-family: inherit;}
+    input:focus, textarea:focus {outline: 1px solid var(--brand); border-color: var(--brand);}
 
     @media (max-width:900px){
       .hero-grid{grid-template-columns:1fr}
       .grid.cols-3,.portfolio,.steps{grid-template-columns:1fr}
       h1{font-size:34px}
+      .cta-band {flex-direction: column; text-align: center;}
     }
   </style>
 </head>
 <body>
   <header>
     <div class="container nav">
-      <div class="logo">Joseph J Home Improvement</div>
+      <div class="logo">Joseph J Property Services</div>
       <div class="links">
         <a href="#services">Services</a>
         <a href="#portfolio">Work</a>
-        <a href="#process">Process</a>
         <a href="#contact">Contact</a>
       </div>
     </div>
@@ -79,45 +83,45 @@
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <div class="eyebrow">New Jersey • Licensed & Insured</div>
-          <h1>Clean, reliable construction & property work—done right the first time.</h1>
-          <p class="lead">Mulching, beds, property maintenance, and contractor systems setup. Fast quotes, clear pricing, and professional results.</p>
+          <div class="eyebrow">Union & Monmouth County • Serving Greater NJ</div>
+          <h1>Professional property care and landscaping—done right.</h1>
+          <p class="lead">Specializing in seasonal cleanups, mulching, and digital systems for contractors. Reliable service with clear communication.</p>
           <div class="cta">
             <a href="#contact" class="btn">Get a Free Quote</a>
-            <a href="#portfolio" class="btn alt">See Our Work</a>
+            <a href="tel:YOUR_PHONE_NUMBER" class="btn alt">📞 Call Now</a>
           </div>
         </div>
         <div class="hero-card">
-          <div class="tag">Why choose us</div>
+          <div class="tag">The Joseph J Standard</div>
           <div class="kpis">
-            <div class="kpi"><b>24–48h</b><div class="muted">Fast scheduling</div></div>
-            <div class="kpi"><b>5★</b><div class="muted">Customer focus</div></div>
-            <div class="kpi"><b>Clean</b><div class="muted">No-mess jobs</div></div>
+            <div class="kpi"><b>Fast</b><div class="muted">Quotes</div></div>
+            <div class="kpi"><b>Local</b><div class="muted">Focus</div></div>
+            <div class="kpi"><b>Clean</b><div class="muted">Jobsite</div></div>
           </div>
-          <p class="sub">We show up on time, communicate clearly, and leave your property better than we found it.</p>
+          <p class="sub" style="margin-top: 20px;">We show up when we say we will and leave your property looking better than we found it.</p>
         </div>
       </div>
     </section>
 
     <section id="services" class="section">
       <div class="container">
-        <h2>Services</h2>
-        <p class="sub">Core offerings tailored for homeowners and rental properties.</p>
+        <h2>Our Services</h2>
+        <p class="sub">Tailored solutions for homeowners and local businesses.</p>
         <div class="grid cols-3">
           <div class="card">
-            <span class="tag">Exterior</span>
-            <h3>Landscaping</h3>
-            <p class="sub">Mulching, bed installs, fabric, edging, rock, seasonal cleanups.</p>
+            <span class="tag">Landscaping</span>
+            <h3>Seasonal Care</h3>
+            <p class="sub">Mulching, bed edging, fabric installation, and property cleanups.</p>
           </div>
           <div class="card">
-            <span class="tag">Maintenance</span>
-            <h3>Property Care</h3>
-            <p class="sub">Turnovers, repairs, routine upkeep, and punch lists.</p>
+            <span class="tag">Property</span>
+            <h3>General Upkeep</h3>
+            <p class="sub">Basic repairs, yard maintenance, and general punch-list items.</p>
           </div>
           <div class="card">
-            <span class="tag">Consulting</span>
-            <h3>Contractor Systems</h3>
-            <p class="sub">Procore setup, timesheets, email + website packages.</p>
+            <span class="tag">Digital</span>
+            <h3>Contractor Tech</h3>
+            <p class="sub">Setting up timesheets, Procore, and business emails for small crews.</p>
           </div>
         </div>
       </div>
@@ -126,80 +130,49 @@
     <section id="portfolio" class="section">
       <div class="container">
         <h2>Recent Work</h2>
-        <p class="sub">Replace placeholders with your before/after photos.</p>
         <div class="portfolio">
-          <div class="ph">Before</div>
-          <div class="ph">After</div>
-          <div class="ph">Project</div>
-          <div class="ph">Before</div>
-          <div class="ph">After</div>
-          <div class="ph">Project</div>
-        </div>
-      </div>
-    </section>
-
-    <section id="process" class="section">
-      <div class="container">
-        <h2>Simple Process</h2>
-        <p class="sub">No confusion. Just clear steps.</p>
-        <div class="steps">
-          <div class="card step">
-            <div class="num">1</div>
-            <h3>Request a quote</h3>
-            <p class="sub">Call or submit the form with photos and details.</p>
-          </div>
-          <div class="card step">
-            <div class="num">2</div>
-            <h3>Plan & schedule</h3>
-            <p class="sub">We confirm scope, pricing, and timeline.</p>
-          </div>
-          <div class="card step">
-            <div class="num">3</div>
-            <h3>We get it done</h3>
-            <p class="sub">Clean, efficient work with a final walkthrough.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="cta-band">
-          <div>
-            <h2>Ready to start?</h2>
-            <p class="sub">Fast estimates. Professional results.</p>
-          </div>
-          <a href="#contact" class="btn">Get a Free Quote</a>
+          <div class="ph">Project Photos Coming Soon</div>
+          <div class="ph">Quality Results</div>
+          <div class="ph">Local Service</div>
         </div>
       </div>
     </section>
 
     <section id="contact" class="section">
-      <div class="container grid cols-3">
-        <div class="card">
-          <h3>Contact</h3>
-          <p class="sub">Phone: (Your Number)<br>Email: info@yourbusiness.com<br>Service Area: New Jersey</p>
-        </div>
-        <div class="card">
-          <h3>Quick Form</h3>
-          <p class="sub">Hook this to a form service later (Netlify Forms / Formspree).</p>
-          <form>
-            <input placeholder="Name" style="width:100%;padding:10px;margin:6px 0;background:#0b0f14;border:1px solid #374151;color:#e6edf3;border-radius:10px"/>
-            <input placeholder="Phone or Email" style="width:100%;padding:10px;margin:6px 0;background:#0b0f14;border:1px solid #374151;color:#e6edf3;border-radius:10px"/>
-            <textarea placeholder="Project details" rows="4" style="width:100%;padding:10px;margin:6px 0;background:#0b0f14;border:1px solid #374151;color:#e6edf3;border-radius:10px"></textarea>
-            <button class="btn" type="button">Submit</button>
-          </form>
-        </div>
-        <div class="card">
-          <h3>Hours</h3>
-          <p class="sub">Mon–Sat: 7am–6pm<br>Sun: By request</p>
+      <div class="container">
+        <div class="grid cols-3">
+          <div class="card">
+            <h3>Contact</h3>
+            <p class="sub">
+              <strong>Email:</strong> <br>info@josephjnj.com<br><br>
+              <strong>Area:</strong> <br>Union County, Monmouth County, and surrounding NJ areas.
+            </p>
+          </div>
+          
+          <div class="card" style="grid-column: span 2;">
+            <h3>Request an Estimate</h3>
+            <form name="contact" method="POST" data-netlify="true">
+              <input type="hidden" name="form-name" value="contact" />
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                <input type="text" name="name" placeholder="Name" required />
+                <input type="text" name="contact_info" placeholder="Phone or Email" required />
+              </div>
+              <textarea name="message" placeholder="How can we help? (Mulching, yard cleanup, etc.)" rows="4" required></textarea>
+              <button class="btn" type="submit" style="width: 100%; margin-top: 10px;">Send Message</button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="container">© 2026 Joseph J Home Improvement • Built for conversions</div>
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <span>© 2026 Joseph J Property Services</span>
+        <span style="font-size: 12px;">Serving Northern & Central NJ</span>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
