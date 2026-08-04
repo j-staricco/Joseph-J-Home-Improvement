@@ -1,178 +1,185 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Joseph J Property Services | Landscaping & Maintenance NJ</title>
-  <meta name="description" content="Reliable landscaping, property maintenance, and digital contractor systems in Union and Monmouth County, NJ."/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    :root{--bg:#0b0f14;--card:#121821;--muted:#9aa4b2;--text:#e6edf3;--brand:#f59e0b;--brand2:#22c55e}
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{margin:0;font-family:Inter,system-ui,Arial;background:linear-gradient(180deg,#0b0f14,#0e141c 40%,#0b0f14);color:var(--text)}
-    a{color:inherit;text-decoration:none}
-    .container{max-width:1100px;margin:0 auto;padding:0 20px}
-    header{position:sticky;top:0;background:rgba(11,15,20,.8);backdrop-filter:blur(8px);border-bottom:1px solid #1f2937;z-index:10}
-    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
-    .nav .links a{margin-left:18px; opacity:.9}
-    .nav .links a:hover{color:var(--brand)}
-    .logo{font-weight:800;letter-spacing:.5px; font-size: 1.2rem;}
-    .btn{display:inline-block;padding:12px 18px;border-radius:999px;background:var(--brand);color:#111;font-weight:700;box-shadow:0 10px 30px rgba(245,158,11,.25); border:none; cursor:pointer;}
-    .btn.alt{background:transparent;color:var(--text);border:1px solid #374151}
-
-    .hero{padding:80px 0 60px}
-    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
-    .eyebrow{color:var(--brand2);font-weight:700;letter-spacing:.05em;text-transform:uppercase;font-size:12px}
-    h1{font-size:42px;line-height:1.1;margin:10px 0 14px}
-    .lead{color:var(--muted);font-size:18px}
-    .cta{margin-top:22px;display:flex;gap:12px;flex-wrap:wrap}
-    .hero-card{background:radial-gradient(1200px 400px at 10% -10%,rgba(34,197,94,.15),transparent),var(--card);border:1px solid #1f2937;border-radius:18px;padding:18px}
-    .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:10px}
-    .kpi{background:#0c1219;border:1px solid #1f2937;border-radius:14px;padding:14px;text-align:center}
-    .kpi b{font-size:20px}
-
-    .section{padding:60px 0}
-    .section h2{font-size:28px;margin:0 0 10px}
-    .section p.sub{color:var(--muted);margin-top:0}
-
-    .grid{display:grid;gap:18px}
-    .grid.cols-3{grid-template-columns:repeat(3,1fr)}
-    .card{background:var(--card);border:1px solid #1f2937;border-radius:18px;padding:18px;box-shadow:0 20px 40px rgba(0,0,0,.25)}
-    .card h3{margin:8px 0}
-    .tag{display:inline-block;font-size:12px;border:1px solid #374151;border-radius:999px;padding:4px 10px;color:#cbd5e1}
-
-    .portfolio{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-    .ph{aspect-ratio:4/3;border-radius:16px;background:linear-gradient(135deg,#1f2937,#111827);border:1px dashed #374151;display:flex;align-items:center;justify-content:center;color:#9aa4b2; overflow:hidden;}
-    .ph img{width:100%; height:100%; object-fit:cover;}
-
-    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .step{counter-increment:step}
-    .step .num{width:34px;height:34px;border-radius:50%;background:var(--brand);color:#111;display:inline-flex;align-items:center;justify-content:center;font-weight:800; margin-bottom: 10px;}
-
-    .cta-band{background:linear-gradient(90deg,rgba(245,158,11,.15),rgba(34,197,94,.15));border:1px solid #1f2937;border-radius:18px;padding:22px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-
-    footer{border-top:1px solid #1f2937;padding:24px 0;color:#9aa4b2}
-    
-    input, textarea {width:100%;padding:12px;margin:6px 0;background:#0b0f14;border:1px solid #374151;color:#e6edf3;border-radius:10px; font-family: inherit;}
-    input:focus, textarea:focus {outline: 1px solid var(--brand); border-color: var(--brand);}
-
-    @media (max-width:900px){
-      .hero-grid{grid-template-columns:1fr}
-      .grid.cols-3,.portfolio,.steps{grid-template-columns:1fr}
-      h1{font-size:34px}
-      .cta-band {flex-direction: column; text-align: center;}
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <div class="container nav">
-      <div class="logo">Joseph J Property Services</div>
-      <div class="links">
-        <a href="#services">Services</a>
-        <a href="#portfolio">Work</a>
-        <a href="#contact">Contact</a>
+<main>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <span class="badge">Serving Union & Monmouth County • Central & Northern NJ</span>
+        <h1>Reliable Handyman & Property Care—Done Right.</h1>
+        <p>From home repairs and assembly to seasonal yard care and pressure washing. Quick response times, transparent pricing, and clean jobsites.</p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">Request a Free Estimate</a>
+          <a href="tel:19085550199" class="btn btn-secondary">📞 Call / Text Now</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="card-header">The Joseph J Guarantee</div>
+        <div class="guarantee-grid">
+          <div class="guarantee-item">
+            <strong>Fast</strong>
+            <span>24-48hr Quotes</span>
+          </div>
+          <div class="guarantee-item">
+            <strong>Reliable</strong>
+            <span>On-Time Arrival</span>
+          </div>
+          <div class="guarantee-item">
+            <strong>Clean</strong>
+            <span>Spotless Jobsite</span>
+          </div>
+        </div>
+        <p class="guarantee-note">We treat your property like our own—leaving every job neat, secure, and ready to use.</p>
       </div>
     </div>
-  </header>
+  </section>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <div class="eyebrow">Based in Union & Monmouth County • Serving clients across New Jersey</div>
-          <h1>Professional property care and landscaping—done right.</h1>
-          <p class="lead">Specializing in seasonal cleanups, mulching, and digital systems for contractors. Reliable service with clear communication.</p>
-          <div class="cta">
-            <a href="#contact" class="btn">Get a Free Quote</a>
-            <a href="tel:YOUR_PHONE_NUMBER" class="btn alt">📞 Call Now</a>
-          </div>
-        </div>
-        <div class="hero-card">
-          <div class="tag">The Joseph J Standard</div>
-          <div class="kpis">
-            <div class="kpi"><b>Fast</b><div class="muted">Quotes</div></div>
-            <div class="kpi"><b>Local</b><div class="muted">Focus</div></div>
-            <div class="kpi"><b>Clean</b><div class="muted">Jobsite</div></div>
-          </div>
-          <p class="sub" style="margin-top: 20px;">We show up when we say we will and leave your property looking better than we found it.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="services" class="section">
-      <div class="container">
-        <h2>Our Services</h2>
-        <p class="sub">Tailored solutions for homeowners and local businesses.</p>
-        <div class="grid cols-3">
-          <div class="card">
-            <span class="tag">Landscaping</span>
-            <h3>Seasonal Care</h3>
-            <p class="sub">Mulching, bed edging, fabric installation, and property cleanups.</p>
-          </div>
-          <div class="card">
-            <span class="tag">Property</span>
-            <h3>General Upkeep</h3>
-            <p class="sub">Basic repairs, yard maintenance, and general punch-list items.</p>
-          </div>
-          <div class="card">
-            <span class="tag">Digital</span>
-            <h3>Contractor Tech</h3>
-            <p class="sub">Setting up timesheets, Procore, and business emails for small crews.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="portfolio" class="section">
-      <div class="container">
-        <h2>Recent Work</h2>
-        <div class="portfolio">
-          <div class="ph">Project Photos Coming Soon</div>
-          <div class="ph">Quality Results</div>
-          <div class="ph">Local Service</div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="container">
-        <div class="grid cols-3">
-          <div class="card">
-            <h3>Contact</h3>
-            <p class="sub">
-              <strong>Email:</strong> <br>info@josephjnj.com<br><br>
-              <strong>Area:</strong> <br>Union County, Monmouth County, and surrounding NJ areas.
-            </p>
-          </div>
-          
-          <div class="card" style="grid-column: span 2;">
-            <h3>Request an Estimate</h3>
-            <form name="contact" method="POST" data-netlify="true">
-              <input type="hidden" name="form-name" value="contact" />
-              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
-                <input type="text" name="name" placeholder="Name" required />
-                <input type="text" name="contact_info" placeholder="Phone or Email" required />
-              </div>
-              <textarea name="message" placeholder="How can we help? (Mulching, yard cleanup, etc.)" rows="4" required></textarea>
-              <button class="btn" type="submit" style="width: 100%; margin-top: 10px;">Send Message</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
+  <!-- SERVICES SECTION -->
+  <section id="services" class="services-section">
     <div class="container">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span>© 2026 Joseph J Property Services</span>
-        <span style="font-size: 12px;">Serving Northern & Central NJ</span>
+      <div class="section-header">
+        <h2>Handyman & Maintenance Services</h2>
+        <p>Quality work for home punch lists, seasonal upkeep, and property care.</p>
+      </div>
+      
+      <div class="services-grid">
+        <div class="service-card">
+          <span class="service-category">Home Punch List</span>
+          <h3>General Repairs</h3>
+          <p>Drywall patching, door knob/lock replacements, cabinet hardware, trim repair, and everyday home fix-its.</p>
+        </div>
+
+        <div class="service-card">
+          <span class="service-category">Setup & Mount</span>
+          <h3>Assembly & Installation</h3>
+          <p>Flat-pack furniture assembly (IKEA, Wayfair), TV wall mounting, floating shelves, curtain rods, and smart home tech.</p>
+        </div>
+
+        <div class="service-card">
+          <span class="service-category">Exterior Care</span>
+          <h3>Pressure Washing & Upkeep</h3>
+          <p>Deck & patio cleaning, gutter cleanouts, mulch bed edging, seasonal cleanups, and outdoor property maintenance.</p>
+        </div>
       </div>
     </div>
-  </footer>
-</body>
-</html>
+  </section>
+
+  <!-- BEFORE & AFTER GALLERY SECTION -->
+  <section id="portfolio" class="portfolio-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Recent Work & Transformations</h2>
+        <p>Check out some of our latest handyman and property cleanup projects before and after.</p>
+      </div>
+
+      <div class="portfolio-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="before-after-container">
+            <div class="image-wrapper">
+              <span class="img-tag before-tag">BEFORE</span>
+              <img src="images/project1-before.jpg" alt="Property before cleanup">
+            </div>
+            <div class="image-wrapper">
+              <span class="img-tag after-tag">AFTER</span>
+              <img src="images/project1-after.jpg" alt="Property after mulch and bed edging">
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Mulch Bed Edging & Yard Cleanup</h3>
+            <p><strong>Location:</strong> Asbury Park, NJ</p>
+            <p>Cleared weed buildup, redefined landscape borders, laid weed barrier, and installed fresh black mulch.</p>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="before-after-container">
+            <div class="image-wrapper">
+              <span class="img-tag before-tag">BEFORE</span>
+              <img src="images/project2-before.jpg" alt="Deck before pressure washing">
+            </div>
+            <div class="image-wrapper">
+              <span class="img-tag after-tag">AFTER</span>
+              <img src="images/project2-after.jpg" alt="Deck after power washing">
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Deck & Patio Power Washing</h3>
+            <p><strong>Location:</strong> Union County, NJ</p>
+            <p>Deep pressure washing to remove grime, algae, and weather stains across wood decking and brick pavers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTRACTOR CONTACT & ESTIMATE SECTION -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <span class="badge">Direct Line</span>
+          <h2>Get a Free Quote</h2>
+          <p>Have a project or punch list in mind? Call, text, or submit a request below. We usually respond within 2 to 4 hours during business days.</p>
+          
+          <div class="info-list">
+            <div class="info-item">
+              <strong>📞 Direct Call / Text:</strong>
+              <a href="tel:19085550199">(908) 555-0199</a>
+            </div>
+            <div class="info-item">
+              <strong>✉️ Email:</strong>
+              <a href="mailto:info@josephjnj.com">info@josephjnj.com</a>
+            </div>
+            <div class="info-item">
+              <strong>📍 Service Territory:</strong>
+              <p>Union County, Monmouth County, and surrounding Northern/Central NJ communities.</p>
+            </div>
+          </div>
+
+          <div class="contractor-badge">
+            ⚡ <strong>Small Job Specialist:</strong> No project is too small for a quick and clean turnaround.
+          </div>
+        </div>
+
+        <!-- Estimate Request Form -->
+        <div class="contact-form-card">
+          <h3>Request an Estimate</h3>
+          <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="estimate-form">
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone / Cell *</label>
+              <input type="tel" id="phone" name="phone" placeholder="(908) 000-0000" required>
+            </div>
+
+            <div class="form-group">
+              <label for="town">Town / County *</label>
+              <input type="text" id="town" name="town" placeholder="e.g. Westfield, Union County" required>
+            </div>
+
+            <div class="form-group">
+              <label for="service-type">Project Type</label>
+              <select id="service-type" name="service-type">
+                <option value="general-repair">General Repairs / Fix-it List</option>
+                <option value="assembly">Furniture Assembly / Mounting</option>
+                <option value="powerwashing">Pressure Washing / Deck Care</option>
+                <option value="landscaping">Landscaping / Yard Cleanup</option>
+                <option value="other">Other / Custom Request</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="details">Project Details / Scope</label>
+              <textarea id="details" name="details" rows="4" placeholder="Describe what you need done, timeline, or any specific details..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-submit">Send Quote Request ➔</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
