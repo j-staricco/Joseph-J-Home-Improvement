@@ -16,3 +16,11 @@ JOSEPH J HOME IMPROVEMENT — GITHUB PAGES
 7. Wait a few minutes and hard-refresh the website.
 
 The site uses Google Fonts, Font Awesome, and AOS from CDNs, so there is no plugin installation required.
+
+
+SEASONAL SERVICES
+- Seasonal Services is now in the navigation.
+- Snow removal, yard cleanup, and seasonal service cards are included.
+- The signup form collects customer contact information, property address, property type, service needed, and details.
+- Replace YOUR_EMAIL_HERE in BOTH form actions with your business email.
+- The 10% offer is presented specifically as a discount for joining the seasonal service list.
