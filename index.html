@@ -16,11 +16,15 @@
 <body>
 <header class="site-header" id="top">
   <div class="container nav-wrap">
-<!-- Replace lines 19–27 with this -->
 <a class="logo" href="#top">
-  <img src="images/logo.png" alt="Joseph J Home Improvement" class="logo-img">
-</a>
-
+  <span class="logo-mark">
+    <img src="images/logo.png" alt="Joseph J Home Improvement">
+  </span>
+  <span>
+    <strong>JOSEPH J</strong>
+    <small>HOME IMPROVEMENT</small>
+  </span>
+</a>    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
     <nav class="nav">
       <a href="#services">Services</a><a href="#seasonal">Seasonal Services</a><a href="#work">Our Work</a><a href="#process">Process</a><a href="#about">About</a>
       <a href="#contact" class="nav-cta">Free Estimate</a>
@@ -200,10 +204,15 @@
 <div class="about-photo"><span>ADD YOUR PHOTO HERE</span></div>
 <div><p class="eyebrow">ABOUT JOSEPH J</p><h2>LOCAL SERVICE.<br><span>PERSONAL ATTENTION.</span></h2><p class="lead">Joseph J Home Improvement provides handyman and home improvement services with a focus on quality, communication, and getting the details right.</p>
 <div class="checks"><p><i class="fa-solid fa-check"></i> Detail-focused workmanship</p><p><i class="fa-solid fa-check"></i> Straightforward communication</p><p><i class="fa-solid fa-check"></i> Projects large and small</p><p><i class="fa-solid fa-check"></i> Free estimates</p></div></div>
-<!-- Replace lines 203–211 with this -->
-<a class="logo footer-logo" href="#top">
-  <img src="images/logo.png" alt="Joseph J Home Improvement" class="footer-logo-img">
-</a>
+</div></section>
+
+<section class="contact section" id="contact"><div class="container contact-grid">
+<div><p class="eyebrow">START YOUR PROJECT</p><h2>LET'S TALK<br><span>ABOUT YOUR PROJECT.</span></h2><p class="lead">Tell us what you need done. Include photos if you have them, and we'll get back to you.</p>
+<div class="contact-details"><p><i class="fa-solid fa-phone"></i> <a href="tel:">(908)992-8635</a></p><p><i class="fa-solid fa-envelope"></i> <a href="mailto:JStariccoBusiness@gmail.com">JStariccoBusiness@gmail.com</a></p><p><i class="fa-solid fa-location-dot"></i> Located in Union County, NJ</p></div></div>
+<form class="estimate-form" action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+<input type="hidden" name="_subject" value="New Joseph J Home Improvement Estimate Request"><input type="hidden" name="_captcha" value="false"><input type="hidden" name="_template" value="table">
+<label>Name<input type="text" name="name" placeholder="Your name" required></label>
+<div class="form-row"><label>Phone<input type="tel" name="phone" placeholder="(555) 555-5555" required></label><label>Email<input type="email" name="email" placeholder="you@email.com"></label></div>
 <label>Town / Area<input type="text" name="town" placeholder="Your town"></label>
 <label>What do you need done?<textarea name="project" rows="5" placeholder="Tell us about your project..." required></textarea></label>
 <button class="btn btn-primary" type="submit">REQUEST A FREE ESTIMATE <i class="fa-solid fa-arrow-right"></i></button>
