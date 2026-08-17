@@ -2377,3 +2377,99 @@ a {
   }
 
 }
+/* =========================================================
+   CURRENT OUR WORK GALLERY
+========================================================= */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  height: 360px;
+  overflow: hidden;
+  background: #dfe2e4;
+  border-radius: 4px;
+  box-shadow: var(--shadow);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  transition: transform .35s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.04);
+}
+
+.gallery-item span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 18px 20px;
+  color: white;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: linear-gradient(
+    to top,
+    rgba(14, 28, 38, .90),
+    rgba(14, 28, 38, 0)
+  );
+}
+
+/* Individual gallery layouts */
+
+.gallery-one {
+  grid-column: span 2;
+  height: 430px;
+}
+
+.gallery-two,
+.gallery-three,
+.gallery-four {
+  height: 320px;
+}
+
+/* Tablet */
+
+@media (max-width: 760px) {
+
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .gallery-item,
+  .gallery-one,
+  .gallery-two,
+  .gallery-three,
+  .gallery-four {
+    grid-column: auto;
+    height: 300px;
+  }
+
+}
+
+/* Small phones */
+
+@media (max-width: 450px) {
+
+  .gallery-item,
+  .gallery-one,
+  .gallery-two,
+  .gallery-three,
+  .gallery-four {
+    height: 250px;
+  }
+
+}
