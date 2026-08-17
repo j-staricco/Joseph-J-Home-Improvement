@@ -88,9 +88,9 @@ img {
 }
 
 .logo img {
-  width: 175px;
+  width: 195px;
   height: auto;
-  max-height: 75px;
+  max-height: 90px;
   object-fit: contain;
 }
 
@@ -739,8 +739,8 @@ footer {
 }
 
 .footer-logo img {
-  width: 150px;
-  max-height: 65px;
+  width: 280px;
+  max-height: 120px;
   object-fit: contain;
 }
 
