@@ -2473,3 +2473,15 @@ a {
   }
 
 }
+/* FIX LOGO SIZE */
+.site-header .logo-mark {
+  width: 58px;
+  height: 58px;
+  flex-shrink: 0;
+}
+
+.site-header .logo-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
