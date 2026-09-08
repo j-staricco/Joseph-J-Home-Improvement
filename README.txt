@@ -1,4 +1,4 @@
-JOSEPH J HOME IMPROVEMENT — GITHUB PAGES
+JOSEPH J CONSTRUCTION — GITHUB PAGES
 
 1. Upload index.html, style.css, script.js and the images folder to your GitHub repository.
 2. Replace YOUR PHONE NUMBER and YOUR EMAIL ADDRESS in index.html.
@@ -17,10 +17,9 @@ JOSEPH J HOME IMPROVEMENT — GITHUB PAGES
 
 The site uses Google Fonts, Font Awesome, and AOS from CDNs, so there is no plugin installation required.
 
-
 SEASONAL SERVICES
 - Seasonal Services is now in the navigation.
 - Snow removal, yard cleanup, and seasonal service cards are included.
 - The signup form collects customer contact information, property address, property type, service needed, and details.
-- Replace YOUR_EMAIL_HERE in BOTH form actions with your business email.
+- The seasonal signup form uses the business email configured in index.html.
 - The 10% offer is presented specifically as a discount for joining the seasonal service list.
