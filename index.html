@@ -188,7 +188,7 @@
       <article class="seasonal-card"><div class="seasonal-icon"><i class="fa-solid fa-leaf"></i></div><h3>YARD CLEANUPS</h3><p>Seasonal cleanup services to help get your property looking its best.</p><ul><li>Fall leaf cleanup</li><li>Spring cleanup</li><li>Debris removal</li><li>General property cleanup</li></ul></article>
       <article class="seasonal-card"><div class="seasonal-icon"><i class="fa-solid fa-sun"></i></div><h3>SEASONAL SERVICES</h3><p>Need something else done around your property? Ask us about other seasonal services and maintenance.</p><ul><li>Property maintenance</li><li>Outdoor cleanup</li><li>Small exterior projects</li><li>Custom service requests</li></ul></article>
     </div>
-    <div class="seasonal-signup">
+    <div class="seasonal-signup" id="snow-signup" style="scroll-margin-top: 100px;">
       <div><p class="eyebrow">JOIN THE SERVICE LIST</p><h3>GET 10% OFF SNOW REMOVAL</h3><p><strong>Limited to the first 20 customers who sign up for snow removal.</strong></p><p>Join our seasonal service list once and we'll keep your property information on file. When a qualifying snowfall is forecast, we'll notify you and your property can be included on our scheduled snow-removal service list.</p><p class="small-note">By submitting your information, you agree to receive service and storm-related notifications from Joseph J Construction. You can request removal from the list at any time.</p></div>
       <form class="seasonal-form" action="https://formsubmit.co/jstariccobusiness@gmail.com" method="POST">
         <input type="hidden" name="_subject" value="New Seasonal Snow Removal Service List Signup"><input type="hidden" name="_captcha" value="false"><input type="hidden" name="_template" value="table"><input type="hidden" name="discount" value="10% snow removal discount">
@@ -198,6 +198,10 @@
         <div class="form-row"><label>Property Type<select name="property_type" required><option value="">Select one</option><option>Residential</option><option>Small Commercial</option></select></label><label>Service Needed<select name="service" required><option value="">Select one</option><option>Snow Removal</option><option>Yard Cleanup</option><option>Other Seasonal Service</option></select></label></div>
         <label>Property / Service Details<textarea name="details" rows="4" placeholder="Driveway size, sidewalks, parking area, cleanup needs, or anything else we should know..."></textarea></label>
         <button class="btn btn-primary" type="submit">JOIN THE SEASONAL LIST <i class="fa-solid fa-arrow-right"></i></button>
+        <p class="signup-status" role="status" aria-live="polite" style="margin-top: 16px;"></p>
+        <p style="margin-top: 16px;">Prefer texting? Send your signup directly to JJ. Your text app will open; tap Send to finish.</p>
+        <a class="btn btn-primary signup-text" href="sms:+19089928635" style="margin-top: 12px;">TEXT MY SIGNUP</a>
+        <p style="margin-top: 12px;">You can also text your name and property address to <a href="sms:+19089928635">(908) 992-8635</a>.</p>
       </form>
     </div>
   </div>
@@ -224,6 +228,6 @@
 
 <footer><div class="container footer-grid"><a class="logo footer-logo" href="#top"><img src="images/Logo.png" alt="Joseph J Construction"></a><div><p class="footer-title">QUICK LINKS</p><a href="#services">Services</a><a href="#seasonal">Seasonal Services</a><a href="#work">Our Work</a><a href="#contact">Free Estimate</a></div><div><p class="footer-title">SERVICE AREA</p><p>Union County, NJ<br>and surrounding areas<br>Contact us to confirm availability in your town.</p></div></div><div class="container copyright">© <span id="year"></span> Joseph J Construction. All rights reserved.</div></footer>
 
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script><script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script><script src="script.js?v=20261109-signup"></script>
 </body>
 </html>
